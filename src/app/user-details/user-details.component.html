@@ -1,0 +1,153 @@
+
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">User Registration</h4>
+                        <p class="card-category">Complete your registration</p>
+                    </div>
+                    <!--                  start of success message container-->
+
+                    <!--                  end of success message container-->
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <!--                              <div class="col-md-5">-->
+                                <!--                                <mat-form-field class="example-full-width">-->
+                                <!--                                    <input matInput placeholder="Company (disabled)" disabled>-->
+                                <!--                                  </mat-form-field>-->
+                                <!--                              </div>-->
+                                <div class="col-md-3">
+                                    <mat-form-field class="example-full-width">
+                                        <label>
+                                            <input matInput placeholder="First Name" [(ngModel)] = "user.firstName" type="text" name="firstName">
+                                        </label>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <label>
+                                            <input matInput placeholder="Email address" [(ngModel)] = "user.userName" type="email" name="userName">
+                                        </label>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <mat-form-field class="example-full-width">
+                                        <label>
+                                            <input matInput placeholder="Last Name" [(ngModel)] = "user.lastName" type="text" name="lastName">
+                                        </label>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-6">
+                                    <mat-form-field class="example-full-width">
+                                        <label>
+                                            <input matInput placeholder="Phone Number" [(ngModel)] = "user.phoneNumber"type="number" name="phoneNumber">
+                                        </label>
+                                    </mat-form-field>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <mat-form-field class="example-full-width">
+                                        <label>
+                                            <input matInput placeholder="House Number" [(ngModel)] = "user.roomNumber" type="text" name="roomNumber">
+                                        </label>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <!--                          <div class="row">-->
+                            <!--                              <div class="col-md-6">-->
+                            <!--                                  <mat-form-field class="example-full-width">-->
+                            <!--                                      <label>-->
+                            <!--                                          <input matInput placeholder="About Plot" [(ngModel)] = "user.plotDescription" type="text" name="plotDescription">-->
+                            <!--                                      </label>-->
+                            <!--                                  </mat-form-field>-->
+                            <!--                              </div>-->
+                            <!--                              <div class="col-md-6">-->
+                            <!--                                  <mat-form-field class="example-full-width">-->
+                            <!--                                      <label>-->
+                            <!--                                          <input matInput placeholder="Plot Number" [(ngModel)] = "user.plotId"type="number" name="plotId">-->
+                            <!--                                      </label>-->
+                            <!--                                  </mat-form-field>-->
+                            <!--                              </div>-->
+                            <!--                          </div>-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <mat-form-field class="example-full-width">
+                                        <label>
+                                            <input matInput placeholder="National Id" [(ngModel)] = "user.id" type="text" name="nationalId">
+                                        </label>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <label>
+                                            <input matInput placeholder="Password" [(ngModel)] = "user.password" type="password" name="password">
+                                        </label>
+                                    </mat-form-field>
+                                </div>
+                                <!--                              <div class="col-md-4">-->
+                                <!--                                <mat-form-field class="example-full-width">-->
+                                <!--                                  <input matInput placeholder="Country" type="text">-->
+                                <!--                                </mat-form-field>-->
+                                <!--                              </div>-->
+                                <!--                              <div class="col-md-4">-->
+                                <!--                                <mat-form-field class="example-full-width">-->
+                                <!--                                  <input matInput placeholder="Postal Code" type="text">-->
+                                <!--                                </mat-form-field>-->
+                                <!--                              </div>-->
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!--                                <label>About Me</label>-->
+                                    <!--                                <mat-form-field class="example-full-width">-->
+                                    <!--                                   <textarea matInput placeholder="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."></textarea>-->
+                                    <!--                                 </mat-form-field>-->
+                                    <!-- <div class="form-group">
+
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
+                                            <textarea class="form-control" rows="5"></textarea>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <button mat-raised-button type="submit" class="btn btn-danger pull-right" (click)="registerThisUser()" >Save</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--          <div class="col-md-4">-->
+            <!--              <div class="card card-profile">-->
+            <!--                  <div class="card-avatar">-->
+            <!--                      <a href="javascript:void(0)">-->
+            <!--                          <img class="img" src="./assets/img/faces/marc.jpg" />-->
+            <!--                      </a>-->
+            <!--                  </div>-->
+            <!--                  <div class="card-body">-->
+            <!--                      <h6 class="card-category text-gray">CEO / Co-Founder</h6>-->
+            <!--                      <h4 class="card-title">Alec Thompson</h4>-->
+            <!--                      <p class="card-description">-->
+            <!--                          Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...-->
+            <!--                      </p>-->
+            <!--                      <a href="javascript:void(0)" class="btn btn-danger btn-round">Follow</a>-->
+            <!--                  </div>-->
+            <!--              </div>-->
+            <!--          </div>-->
+        </div>
+    </div>
+</div>
+<div class="alert alert-success">
+    <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <i class="material-icons">close</i>
+    </button>
+    <span>
+         <b> {{message}} </b>
+    </span>
+</div>
